@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.section1-location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+iframe{
+  height: 320px;
+  width: 500px;
+} 
+.section1-location-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDF3F0;
+  gap: 24px;
+  width: 100%;
+  background-image: url(./mobile.img/location.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section1-location-text h3{
+  padding-top: 80px;
+  color: #E7816B;
+  text-align: center;
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 112.5% */
+}
+.section1-location-text p{
+  color: #333136;
+  text-align: center;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+  
+}
+.section1-location-text span{
+  color: #333136;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.contact{
+  padding-bottom: 80px;
+}
+.section1-location-last{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 190px;
+}
+@media(width>=740px){
+  .section1-location{
+    width: 689px;
+    gap: 30px;
+  }
+  iframe{
+    border-radius: 15px;
+  }
+  .section1-location-text{
+    border-radius: 15px;
+  }
+  .location-p{
+    display: flex;
+  }
+  iframe{
+    width: 689px;
+  }
+  .section1-location-last{
+    gap: 30px;
+    margin-bottom: 256px;
+  }
+  .section1-location-text h3{
+    align-self: flex-start;
+    padding-left: 75px;
+  }
+  .location-p{
+    align-self: flex-start;
+    padding-left: 75px;
+    gap: 40px;
+    text-align: start;
+  }
+  .section1-location p{
+    text-align: start;
+  }
+  .section1-location-text p{
+    text-align: start;
+  }
+}
+@media(width>=1024px){
+  .section1-location{
+    flex-direction: row-reverse;
+    width: 1111px;
+  }
+  .section1-location:nth-child(2) {
+    flex-direction: row;
+  }
+  .section1-location-text{
+    width: 730px;
+    height: 326px;
+  }
+  iframe{
+    width: 350px;
+    height: 326px;
+  }
+  .section1-location-last{
+    flex-direction: row-reverse;
+  }
+}

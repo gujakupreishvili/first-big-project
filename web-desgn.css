@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header a{
+  text-decoration: none;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section1-web{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #E7816B;
+  gap: 24px;
+  background-image: url(./mobile.img/other\ html\ img\ \(2\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section1-web h1{
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 112.5% */
+  width: 327px;
+  padding-top: 105px;
+}
+.section1-web p{
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  width: 327px;
+  margin-bottom: 10px;
+  padding-bottom: 70px;
+}
+.section2-web{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 40px;
+}
+.img-text-sect2{
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 327px;
+  background-color: 
+  #FDF3F0;
+  gap: 16px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  border: none;
+}
+.info:hover{
+  background-color: #E7816B;
+  transition: 0.9s;
+}
+.info:hover .info-h1{
+  color: white;
+  transition: 0.9s;
+}
+.info:hover .info-p{
+  color: white;
+  transition: 0.9s;
+}
+.info-h1{
+  color: #E7816B;
+  text-align: center;
+  font-family: Jost; 
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+  letter-spacing: 5px;
+  padding-top: 30px;
+}
+.info-p{
+  color: #333136;
+  text-align: center;
+  font-family: Jost; 
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  width: 267px;
+  padding-bottom: 32px;
+}
+.other-side{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 146px;
+}
+@media(width>=740px){
+  .section1-web{
+    width: 689px;
+    border-radius: 15px;
+    background-image: url(./tablet.img/about\ ring\ tablet.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 252px;
+    background-repeat: no-repeat;
+  }
+  .mobile-hr{
+    display: none;
+  }
+  .desktop-hr{
+    display: block;
+  }
+  .other-side{
+    margin-bottom: 265px;
+    margin-top: 80px;
+  }
+  .img-text-sect2{
+    flex-direction: row;
+  }
+  .web1-mobile-img{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .info{
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+  }
+}
+@media(width>=1024px){
+  .section1-web{
+    width: 1111px;
+    background-image: url(./desktop.img/desktop-rings-web.png);
+    background-repeat: no-repeat;
+  }
+  .section2-web{
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .img-text-sect2{
+    flex-direction: column;
+  }
+  .info{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+  }
+  .other-side{
+    flex-direction: row;
+  }
+  .graphic-design{
+    margin-top: 0px;
+  }
+}
